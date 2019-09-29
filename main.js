@@ -1,6 +1,6 @@
 // 1. Change background color when hovering over any button
 
-var newButtonColor = document.querySelectorAll('section .button-color');
+var newButtonColor = document.querySelectorAll('.button-color');
 
 function colorChange() {
   for(i = 0; i < newButtonColor.length; i++) {
@@ -39,9 +39,22 @@ var messageOne = document.createTextNode('Oooh - so close, but no cigar!');
 
 function buttonOneMessage() {
   buttonOne.appendChild(messageOne);
+
 }
 
 buttonOne.addEventListener('click', buttonOneMessage);
+
+/* --------------------------
+
+// Message Disappear
+
+function messageOneLeave() {
+  buttonOne.removeChild(messageOne);
+}
+
+buttonOne.addEventListener('mouseleave', messageOneLeave);
+
+----------------------------- */
 
 // 3. Box 2 Message
 
@@ -54,6 +67,18 @@ function buttonTwoMessage() {
 
 buttonTwo.addEventListener('click', buttonTwoMessage);
 
+/* --------------------------
+
+// Message Disappear
+
+function messageTwoLeave() {
+  buttonTwo.removeChild(messageTwo);
+}
+
+buttonTwo.addEventListener('mouseleave', messageTwoLeave);
+
+----------------------------- */
+
 // 4. Box 3 Message
 
 var buttonThree = document.querySelector('.green-button');
@@ -64,3 +89,28 @@ function buttonThreeMessage() {
 }
 
 buttonThree.addEventListener('click', buttonThreeMessage);
+
+/* --------------------------
+
+// Message Disappear
+
+function messageThreeLeave() {
+  buttonThree.removeChild(messageThree);
+}
+
+buttonThree.addEventListener('mouseleave', messageThreeLeave);
+
+----------------------------- */
+
+// 5. Reveal Start-Over Button
+
+var hiddenButton = document.querySelector('.refresh');
+var allButtons = document.querySelectorAll('.button-style');
+
+function showButton() {
+  hiddenButton.classList.remove('hidden');
+}
+
+for(i = 0; i < allButtons.length; i++) {
+  allButtons[i].addEventListener('click', showButton);
+}
