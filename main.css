@@ -16,4 +16,14 @@ h1 {
 
 /* Main */
 
+main {
+  text-align: center;
+}
+
+h2 {
+  color: #6103c3;
+  text-transform: uppercase;
+  padding-bottom: 3%;
+}
+
 /* Boxes */
