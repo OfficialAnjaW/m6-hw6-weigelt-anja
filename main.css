@@ -27,7 +27,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-/* Boxes */
+/* Buttons */
 
 .button-style {
   border: solid 10px #6103c3;
@@ -41,6 +41,8 @@ h3 {
   font-size: 10rem;
 }
 
+/* Button: Orginial Colors */
+
 .yellow-button {
   background-color: #fcff00;
 }
@@ -50,6 +52,24 @@ h3 {
 }
 
 .green-button {
+  background-color: #a5ff01;
+}
+
+/* Button: New Colors */
+
+.selectedcolor {
+  background-color: #ff0025 !important;
+}
+
+.yellow-alt {
+  background-color: #fcff00;
+}
+
+.turquoise-alt {
+  background-color: #57ffc9;
+}
+
+.green-alt {
   background-color: #a5ff01;
 }
 
