@@ -15,9 +15,9 @@ for(i = 0; i < newButtonColor.length; i++) {
 
 /* --------------------------
 
-// ALT: Change to DIFFERENT background color when hovering over any button
+// 1. ALT: Change to DIFFERENT background color when hovering over any button
 
-var newButtonColor = document.querySelectorAll('section .button-color');
+var newButtonColor = document.querySelectorAll('.button-color');
 
 function colorChange() {
     newButtonColor[0].classList.toggle('green-alt');
@@ -35,11 +35,10 @@ for(i = 0; i < newButtonColor.length; i++) {
 // 2. Box 1 Message
 
 var buttonOne = document.querySelector('.yellow-button');
-var messageOne = document.createTextNode('Oooh - so close, but no cigar!');
+var messageOne = document.createTextNode('Oooh - so close, but no cigar! Try again.');
 
 function buttonOneMessage() {
   buttonOne.appendChild(messageOne);
-
 }
 
 buttonOne.addEventListener('click', buttonOneMessage);
